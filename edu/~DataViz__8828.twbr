@@ -1,0 +1,2908 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0213.2333                               -->
+<workbook source-build='2019.1.0 (20191.19.0213.2333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='edu_merged_data_tableau_clean' inline='true' name='federated.0j0fsjs05swxvq18z3flt0x9r4v1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='edu_merged_data_tableau_clean' name='textscan.154u81w00x6e3d1f4f0lw06yu9x1'>
+            <connection class='textscan' directory='C:/Users/amnag/HCDE511_DataViz/Project/edu/data' filename='edu_merged_data_tableau_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.154u81w00x6e3d1f4f0lw06yu9x1' name='edu_merged_data_tableau_clean.csv' table='[edu_merged_data_tableau_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Region' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Sex' ordinal='3' />
+            <column datatype='real' name='Primary enrollment (%)' ordinal='4' />
+            <column datatype='real' name='Secondary enrollment (%)' ordinal='5' />
+            <column datatype='real' name='Tertiary enrollment (%)' ordinal='6' />
+            <column datatype='real' name='No schooling (%)' ordinal='7' />
+            <column datatype='real' name='Primary schooling (%)' ordinal='8' />
+            <column datatype='real' name='Primary schooling complete (%)' ordinal='9' />
+            <column datatype='real' name='Secondary schooling (%)' ordinal='10' />
+            <column datatype='real' name='Secondary schooling complete (%)' ordinal='11' />
+            <column datatype='real' name='Tertiary schooling (%)' ordinal='12' />
+            <column datatype='real' name='Tertiary schooling complete (%)' ordinal='13' />
+            <column datatype='real' name='Total schooling (years)' ordinal='14' />
+            <column datatype='real' name='Total primary schooling (years)' ordinal='15' />
+            <column datatype='real' name='Total secondary schooling (years)' ordinal='16' />
+            <column datatype='real' name='Total tertiary schooling (years)' ordinal='17' />
+            <column datatype='real' name='Human capital' ordinal='18' />
+            <column datatype='real' name='Human capital adjusted' ordinal='19' />
+            <column datatype='real' name='Population (thousands)' ordinal='20' />
+            <column datatype='real' name='Life expectancy (years)' ordinal='21' />
+            <column datatype='real' name='SuicideRate (%)' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary enrollment (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Primary enrollment (%)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary enrollment (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Secondary enrollment (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary enrollment (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Tertiary enrollment (%)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No schooling (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>No schooling (%)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary schooling (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Primary schooling (%)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary schooling complete (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Primary schooling complete (%)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary schooling (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Secondary schooling (%)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary schooling complete (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Secondary schooling complete (%)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary schooling (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Tertiary schooling (%)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary schooling complete (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Tertiary schooling complete (%)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total schooling (years)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Total schooling (years)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total primary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total primary schooling (years)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Total primary schooling (years)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total secondary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total secondary schooling (years)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Total secondary schooling (years)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total tertiary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total tertiary schooling (years)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Total tertiary schooling (years)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human capital</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human capital]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Human capital</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human capital adjusted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human capital adjusted]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Human capital adjusted</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population (thousands)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population (thousands)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Population (thousands)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life expectancy (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Life expectancy (years)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>Life expectancy (years)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SuicideRate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SuicideRate (%)]</local-name>
+            <parent-name>[edu_merged_data_tableau_clean.csv]</parent-name>
+            <remote-alias>SuicideRate (%)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.226551' measure-ordering='alphabetic' measure-percentage='0.773449' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='edu_merged_data' inline='true' name='federated.0tgip1v0sginra1cf4d5f01ls2wh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='edu_merged_data_tableau_clean' name='textscan.11mrb4u0rfesdn19qch7b1orjh1k'>
+            <connection class='textscan' directory='C:/Users/amnag/HCDE511_DataViz/Project/edu/data' filename='edu_merged_data_tableau_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.11mrb4u0rfesdn19qch7b1orjh1k' name='edu_merged_data.csv' table='[edu_merged_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='region_code' ordinal='0' />
+            <column datatype='real' name='BLcode' ordinal='1' />
+            <column datatype='string' name='country' ordinal='2' />
+            <column datatype='real' name='year' ordinal='3' />
+            <column datatype='string' name='sex' ordinal='4' />
+            <column datatype='real' name='pri' ordinal='5' />
+            <column datatype='real' name='sec' ordinal='6' />
+            <column datatype='real' name='ter' ordinal='7' />
+            <column datatype='real' name='lu' ordinal='8' />
+            <column datatype='real' name='lp' ordinal='9' />
+            <column datatype='real' name='lpc' ordinal='10' />
+            <column datatype='real' name='ls' ordinal='11' />
+            <column datatype='real' name='lsc' ordinal='12' />
+            <column datatype='real' name='lh' ordinal='13' />
+            <column datatype='real' name='lhc' ordinal='14' />
+            <column datatype='real' name='tyr' ordinal='15' />
+            <column datatype='real' name='pyr' ordinal='16' />
+            <column datatype='real' name='syr' ordinal='17' />
+            <column datatype='real' name='hyr' ordinal='18' />
+            <column datatype='real' name='hc' ordinal='19' />
+            <column datatype='real' name='hca' ordinal='20' />
+            <column datatype='real' name='pop' ordinal='21' />
+            <column datatype='real' name='Life expectancy (years)' ordinal='22' />
+            <column datatype='real' name='SuicideRate' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region_code]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>region_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BLcode</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BLcode]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>BLcode</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pri</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pri]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>pri</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sec</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sec]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>sec</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ter]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>ter</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lu</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lu]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>lu</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lp]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>lp</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lpc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lpc]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>lpc</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ls</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ls]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>ls</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lsc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lsc]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>lsc</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lh]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>lh</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lhc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lhc]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>lhc</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tyr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tyr]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>tyr</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pyr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pyr]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>pyr</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>syr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[syr]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>syr</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hyr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hyr]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>hyr</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hc]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>hc</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hca</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hca]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>hca</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pop]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>pop</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life expectancy (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Life expectancy (years)]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>Life expectancy (years)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SuicideRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SuicideRate]</local-name>
+            <parent-name>[edu_merged_data.csv]</parent-name>
+            <remote-alias>SuicideRate</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='B Lcode' datatype='real' name='[BLcode]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Suicide Rate' datatype='real' name='[SuicideRate]' role='measure' type='quantitative' />
+      <column caption='Country 1' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Hc' datatype='real' name='[hc]' role='measure' type='quantitative' />
+      <column caption='Hca' datatype='real' name='[hca]' role='measure' type='quantitative' />
+      <column caption='Hyr' datatype='real' name='[hyr]' role='measure' type='quantitative' />
+      <column caption='Lh' datatype='real' name='[lh]' role='measure' type='quantitative' />
+      <column caption='Lhc' datatype='real' name='[lhc]' role='measure' type='quantitative' />
+      <column caption='Lp' datatype='real' name='[lp]' role='measure' type='quantitative' />
+      <column caption='Lpc' datatype='real' name='[lpc]' role='measure' type='quantitative' />
+      <column caption='Ls' datatype='real' name='[ls]' role='measure' type='quantitative' />
+      <column caption='Lsc' datatype='real' name='[lsc]' role='measure' type='quantitative' />
+      <column caption='Lu' datatype='real' name='[lu]' role='measure' type='quantitative' />
+      <column caption='Pop' datatype='real' name='[pop]' role='measure' type='quantitative' />
+      <column caption='Pri' datatype='real' name='[pri]' role='measure' type='quantitative' />
+      <column caption='Pyr' datatype='real' name='[pyr]' role='measure' type='quantitative' />
+      <column caption='Region Code' datatype='string' name='[region_code]' role='dimension' type='nominal' />
+      <column caption='Sec' datatype='real' name='[sec]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='Syr' datatype='real' name='[syr]' role='measure' type='quantitative' />
+      <column caption='Ter' datatype='real' name='[ter]' role='measure' type='quantitative' />
+      <column caption='Total schooling (years) 1' datatype='real' name='[tyr]' role='measure' type='quantitative' />
+      <column caption='Year 1' datatype='real' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.18254' measure-ordering='alphabetic' measure-percentage='0.81746' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:country:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='edu_suicide_rate_life_expectancy_nulls' inline='true' name='federated.1nm8mdg0ppc1dq10m0gxg03asr8d' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='edu_suicide_rate_life_expectancy_nulls' name='textscan.1c46r311pc9cwm192rztl0n4jysq'>
+            <connection class='textscan' directory='C:/Users/amnag/HCDE511_DataViz/Project/edu/data' filename='edu_suicide_rate_life_expectancy_nulls.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1c46r311pc9cwm192rztl0n4jysq' name='edu_suicide_rate_life_expectancy_nulls.csv' table='[edu_suicide_rate_life_expectancy_nulls#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Region' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Sex' ordinal='3' />
+            <column datatype='real' name='Primary enrollment (%)' ordinal='4' />
+            <column datatype='real' name='Secondary enrollment (%)' ordinal='5' />
+            <column datatype='real' name='Tertiary enrollment (%)' ordinal='6' />
+            <column datatype='real' name='No schooling (%)' ordinal='7' />
+            <column datatype='real' name='Primary schooling (%)' ordinal='8' />
+            <column datatype='real' name='Primary schooling complete (%)' ordinal='9' />
+            <column datatype='real' name='Secondary schooling (%)' ordinal='10' />
+            <column datatype='real' name='Secondary schooling complete (%)' ordinal='11' />
+            <column datatype='real' name='Tertiary schooling (%)' ordinal='12' />
+            <column datatype='real' name='Tertiary schooling complete (%)' ordinal='13' />
+            <column datatype='real' name='Total schooling (years)' ordinal='14' />
+            <column datatype='real' name='Total primary schooling (years)' ordinal='15' />
+            <column datatype='real' name='Total secondary schooling (years)' ordinal='16' />
+            <column datatype='real' name='Total tertiary schooling (years)' ordinal='17' />
+            <column datatype='real' name='Human capital' ordinal='18' />
+            <column datatype='real' name='Human capital adjusted' ordinal='19' />
+            <column datatype='real' name='Population (thousands)' ordinal='20' />
+            <column datatype='real' name='Life expectancy (years)' ordinal='21' />
+            <column datatype='real' name='SuicideRate (%)' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary enrollment (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Primary enrollment (%)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary enrollment (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Secondary enrollment (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary enrollment (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Tertiary enrollment (%)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No schooling (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>No schooling (%)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary schooling (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Primary schooling (%)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary schooling complete (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Primary schooling complete (%)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary schooling (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Secondary schooling (%)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary schooling complete (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Secondary schooling complete (%)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary schooling (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Tertiary schooling (%)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary schooling complete (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Tertiary schooling complete (%)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total schooling (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Total schooling (years)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total primary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total primary schooling (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Total primary schooling (years)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total secondary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total secondary schooling (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Total secondary schooling (years)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total tertiary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total tertiary schooling (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Total tertiary schooling (years)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human capital</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human capital]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Human capital</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human capital adjusted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human capital adjusted]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Human capital adjusted</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population (thousands)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population (thousands)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Population (thousands)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life expectancy (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Life expectancy (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>Life expectancy (years)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SuicideRate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SuicideRate (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_nulls.csv]</parent-name>
+            <remote-alias>SuicideRate (%)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.2' measure-ordering='alphabetic' measure-percentage='0.8' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='edu_life_expectancy' inline='true' name='federated.13rvs6o1kq9wew1fo3eo408q3tkn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='edu_life_expectancy' name='textscan.0m5fu6i1gzdyuz155eey90nc9dtf'>
+            <connection class='textscan' directory='C:/Users/amnag/HCDE511_DataViz/Project/edu/data' filename='edu_life_expectancy.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0m5fu6i1gzdyuz155eey90nc9dtf' name='edu_life_expectancy.csv' table='[edu_life_expectancy#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Region' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='integer' date-parse-format='yyyy' name='Year' ordinal='2' />
+            <column datatype='string' name='Sex' ordinal='3' />
+            <column datatype='real' name='Primary enrollment (%)' ordinal='4' />
+            <column datatype='real' name='Secondary enrollment (%)' ordinal='5' />
+            <column datatype='real' name='Tertiary enrollment (%)' ordinal='6' />
+            <column datatype='real' name='No schooling (%)' ordinal='7' />
+            <column datatype='real' name='Primary schooling (%)' ordinal='8' />
+            <column datatype='real' name='Primary schooling complete (%)' ordinal='9' />
+            <column datatype='real' name='Secondary schooling (%)' ordinal='10' />
+            <column datatype='real' name='Secondary schooling complete (%)' ordinal='11' />
+            <column datatype='real' name='Tertiary schooling (%)' ordinal='12' />
+            <column datatype='real' name='Tertiary schooling complete (%)' ordinal='13' />
+            <column datatype='real' name='Total schooling (years)' ordinal='14' />
+            <column datatype='real' name='Total primary schooling (years)' ordinal='15' />
+            <column datatype='real' name='Total secondary schooling (years)' ordinal='16' />
+            <column datatype='real' name='Total tertiary schooling (years)' ordinal='17' />
+            <column datatype='real' name='Human capital' ordinal='18' />
+            <column datatype='real' name='Human capital adjusted' ordinal='19' />
+            <column datatype='real' name='Population (thousands)' ordinal='20' />
+            <column datatype='real' name='Life expectancy (years)' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary enrollment (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Primary enrollment (%)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary enrollment (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Secondary enrollment (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary enrollment (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Tertiary enrollment (%)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No schooling (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>No schooling (%)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary schooling (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Primary schooling (%)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary schooling complete (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Primary schooling complete (%)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary schooling (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Secondary schooling (%)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary schooling complete (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Secondary schooling complete (%)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary schooling (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Tertiary schooling (%)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary schooling complete (%)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Tertiary schooling complete (%)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total schooling (years)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Total schooling (years)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total primary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total primary schooling (years)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Total primary schooling (years)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total secondary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total secondary schooling (years)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Total secondary schooling (years)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total tertiary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total tertiary schooling (years)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Total tertiary schooling (years)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human capital</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human capital]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Human capital</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human capital adjusted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human capital adjusted]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Human capital adjusted</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population (thousands)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population (thousands)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Population (thousands)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life expectancy (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Life expectancy (years)]</local-name>
+            <parent-name>[edu_life_expectancy.csv]</parent-name>
+            <remote-alias>Life expectancy (years)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='RateOfEducationAttainment' datatype='real' name='[Calculation_1463106944525553664]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(LOOKUP(MAX([Total schooling (years)]),LAST()))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.188834' measure-ordering='alphabetic' measure-percentage='0.811166' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='edu_suicide_rate_life_expectancy_no_null' inline='true' name='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='edu_suicide_rate_life_expectancy_no_null' name='textscan.0i3bh4r0t83s3c14i7mkx0sajnip'>
+            <connection class='textscan' directory='C:/Users/amnag/HCDE511_DataViz/Project/edu/data' filename='edu_suicide_rate_life_expectancy_no_null.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0i3bh4r0t83s3c14i7mkx0sajnip' name='edu_suicide_rate_life_expectancy_no_null.csv' table='[edu_suicide_rate_life_expectancy_no_null#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Region' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='2' />
+            <column datatype='string' name='Sex' ordinal='3' />
+            <column datatype='real' name='Primary enrollment (%)' ordinal='4' />
+            <column datatype='real' name='Secondary enrollment (%)' ordinal='5' />
+            <column datatype='real' name='Tertiary enrollment (%)' ordinal='6' />
+            <column datatype='real' name='No schooling (%)' ordinal='7' />
+            <column datatype='real' name='Primary schooling (%)' ordinal='8' />
+            <column datatype='real' name='Primary schooling complete (%)' ordinal='9' />
+            <column datatype='real' name='Secondary schooling (%)' ordinal='10' />
+            <column datatype='real' name='Secondary schooling complete (%)' ordinal='11' />
+            <column datatype='real' name='Tertiary schooling (%)' ordinal='12' />
+            <column datatype='real' name='Tertiary schooling complete (%)' ordinal='13' />
+            <column datatype='real' name='Total schooling (years)' ordinal='14' />
+            <column datatype='real' name='Total primary schooling (years)' ordinal='15' />
+            <column datatype='real' name='Total secondary schooling (years)' ordinal='16' />
+            <column datatype='real' name='Total tertiary schooling (years)' ordinal='17' />
+            <column datatype='real' name='Human capital' ordinal='18' />
+            <column datatype='real' name='Human capital adjusted' ordinal='19' />
+            <column datatype='integer' name='Population (thousands)' ordinal='20' />
+            <column datatype='real' name='Life expectancy (years)' ordinal='21' />
+            <column datatype='real' name='SuicideRate (%)' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary enrollment (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Primary enrollment (%)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary enrollment (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Secondary enrollment (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary enrollment (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Tertiary enrollment (%)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No schooling (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>No schooling (%)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary schooling (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Primary schooling (%)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary schooling complete (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Primary schooling complete (%)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary schooling (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Secondary schooling (%)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Secondary schooling complete (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Secondary schooling complete (%)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary schooling (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary schooling (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Tertiary schooling (%)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tertiary schooling complete (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tertiary schooling complete (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Tertiary schooling complete (%)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total schooling (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Total schooling (years)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total primary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total primary schooling (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Total primary schooling (years)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total secondary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total secondary schooling (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Total secondary schooling (years)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total tertiary schooling (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total tertiary schooling (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Total tertiary schooling (years)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human capital</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human capital]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Human capital</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human capital adjusted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human capital adjusted]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Human capital adjusted</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population (thousands)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population (thousands)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Population (thousands)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life expectancy (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Life expectancy (years)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>Life expectancy (years)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SuicideRate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SuicideRate (%)]</local-name>
+            <parent-name>[edu_suicide_rate_life_expectancy_no_null.csv]</parent-name>
+            <remote-alias>SuicideRate (%)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='PopulationBin' datatype='string' name='[Calculation_621215290738126849]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ([Population (thousands)])/(1000) &gt; 35 THEN &quot;Big&quot; ELSEIF ([Population (thousands)])/(1000) &lt; 5 THEN &quot;Small&quot; ELSE &quot;Medium&quot; END' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Total schooling (years) (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[Total schooling (years)]' peg='0' size='0.35' />
+      </column>
+      <column datatype='real' name='[Total schooling (years)]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.25' measure-ordering='alphabetic' measure-percentage='0.75' show-structure='true' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='country_edu_life_expectancy_rates.csv+ (Multiple Connections)' inline='true' name='federated.16abv3d0verlep19ohfg20byhspk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='country_edu_life_expectancy_rates' name='textscan.07cw7p90lurzut1f8lb0k0lpc43k'>
+            <connection class='textscan' directory='C:/Users/amnag/HCDE511_DataViz/Project/edu/data' filename='country_edu_life_expectancy_rates.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.07cw7p90lurzut1f8lb0k0lpc43k' name='country_edu_life_expectancy_rates.csv' table='[country_edu_life_expectancy_rates#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='real' name='education_change_rate' ordinal='1' />
+            <column datatype='real' name='life_expectancy_change_rate' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[country_edu_life_expectancy_rates.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[country_edu_life_expectancy_rates.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>education_change_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[education_change_rate]</local-name>
+            <parent-name>[country_edu_life_expectancy_rates.csv]</parent-name>
+            <remote-alias>education_change_rate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>life_expectancy_change_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[life_expectancy_change_rate]</local-name>
+            <parent-name>[country_edu_life_expectancy_rates.csv]</parent-name>
+            <remote-alias>life_expectancy_change_rate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Education Change Rate' datatype='real' name='[education_change_rate]' role='measure' type='quantitative' />
+      <column caption='Life Expectancy Change Rate' datatype='real' name='[life_expectancy_change_rate]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.428571' measure-ordering='alphabetic' measure-percentage='0.571429' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='region_edu_life_expectancy_rates' inline='true' name='federated.0c5c6s2104m0po1d4ytih0iidv0j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='region_edu_life_expectancy_rates' name='textscan.0yi29rl1ud86a91crd1d018aujqh'>
+            <connection class='textscan' directory='C:/Users/amnag/HCDE511_DataViz/Project/edu/data' filename='region_edu_life_expectancy_rates.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0yi29rl1ud86a91crd1d018aujqh' name='region_edu_life_expectancy_rates.csv' table='[region_edu_life_expectancy_rates#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='education_change_rate' ordinal='0' />
+            <column datatype='real' name='life_expectancy_change_rate' ordinal='1' />
+            <column datatype='string' name='region_code' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[region_edu_life_expectancy_rates.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>education_change_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[education_change_rate]</local-name>
+            <parent-name>[region_edu_life_expectancy_rates.csv]</parent-name>
+            <remote-alias>education_change_rate</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>life_expectancy_change_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[life_expectancy_change_rate]</local-name>
+            <parent-name>[region_edu_life_expectancy_rates.csv]</parent-name>
+            <remote-alias>life_expectancy_change_rate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region_code]</local-name>
+            <parent-name>[region_edu_life_expectancy_rates.csv]</parent-name>
+            <remote-alias>region_code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Education Change Rate' datatype='real' name='[education_change_rate]' role='measure' type='quantitative' />
+      <column caption='Life Expectancy Change Rate' datatype='real' name='[life_expectancy_change_rate]' role='measure' type='quantitative' />
+      <column caption='Region Code' datatype='string' name='[region_code]' role='dimension' type='nominal' />
+      <column-instance column='[region_code]' derivation='None' name='[none:region_code:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.464286' measure-ordering='alphabetic' measure-percentage='0.535714' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:region_code:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Latin America and the Caribbean&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Eastern Europe&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sub-Saharan Africa&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Asia and the Pacific&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Middle East and North Africa&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Advanced Economies&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Life Expect By Year - Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Life expectancy by year and country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_suicide_rate_life_expectancy_no_null' name='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Life expectancy (years)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Life expectancy (years)]' derivation='Avg' name='[avg:Life expectancy (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk]'>
+            <groupfilter from='&quot;Afghanistan&quot;' function='range' level='[none:Country:nk]' to='&quot;Zimbabwe&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Life expectancy (years):qk]</rows>
+        <cols>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{0BDD3986-A5DA-417A-84EF-658A83A6365C}' />
+    </worksheet>
+    <worksheet name='Life Expect By Year - Country (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Life expectancy by year and region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_suicide_rate_life_expectancy_no_null' name='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Life expectancy (years)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Life expectancy (years)]' derivation='Avg' name='[avg:Life expectancy (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Life expectancy (years)]' derivation='Min' name='[min:Life expectancy (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;Japan&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk]' direction='ASC' using='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[min:Life expectancy (years):qk]' />
+          <slices>
+            <column>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Life expectancy (years):qk]</rows>
+        <cols>([federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk] * [federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Year:qk])</cols>
+      </table>
+      <simple-id uuid='{C8FAB750-3E23-4DDB-AB0C-2E2E2D53CBCE}' />
+    </worksheet>
+    <worksheet name='Life Expect By Year - Region'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Life expectancy by year and region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_suicide_rate_life_expectancy_no_null' name='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0'>
+            <column datatype='real' name='[Life expectancy (years)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Life expectancy (years)]' derivation='Avg' name='[avg:Life expectancy (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Life expectancy (years):qk]</rows>
+        <cols>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{05EF7327-98F7-4E17-B440-6624E39CF781}' />
+    </worksheet>
+    <worksheet name='Life Expect By Year - World'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Life expectancy by year (world)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_suicide_rate_life_expectancy_no_null' name='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0'>
+            <column datatype='real' name='[Life expectancy (years)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Life expectancy (years)]' derivation='Avg' name='[avg:Life expectancy (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Life expectancy (years):qk]</rows>
+        <cols>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{81E427E8-45B2-4B93-9CC0-E35B05B1C303}' />
+    </worksheet>
+    <worksheet name='Life Expect By Year - World (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Life expectancy by year (world)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_suicide_rate_life_expectancy_no_null' name='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Life expectancy (years)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Life expectancy (years)]' derivation='Avg' name='[avg:Life expectancy (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Life expectancy (years):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Life expectancy (years):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Life expectancy (years):qk]</rows>
+        <cols>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[tyr:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{D4BF61B3-762B-4BC0-85D3-65B38F76B6E5}' />
+    </worksheet>
+    <worksheet name='Rate of eductation vs rate of life expectancy (country)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_edu_life_expectancy_rates.csv+ (Multiple Connections)' name='federated.16abv3d0verlep19ohfg20byhspk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16abv3d0verlep19ohfg20byhspk'>
+            <column-instance column='[education_change_rate]' derivation='Avg' name='[avg:education_change_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[life_expectancy_change_rate]' derivation='Avg' name='[avg:life_expectancy_change_rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Education Change Rate' datatype='real' name='[education_change_rate]' role='measure' type='quantitative' />
+            <column caption='Life Expectancy Change Rate' datatype='real' name='[life_expectancy_change_rate]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.16abv3d0verlep19ohfg20byhspk].[avg:education_change_rate:qk]' scope='cols' value='Education Change Rate' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16abv3d0verlep19ohfg20byhspk].[none:country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='true' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.16abv3d0verlep19ohfg20byhspk].[avg:life_expectancy_change_rate:qk]</rows>
+        <cols>[federated.16abv3d0verlep19ohfg20byhspk].[avg:education_change_rate:qk]</cols>
+      </table>
+      <simple-id uuid='{A595FBBB-C9E2-4AC9-BB21-491AC52DDDD5}' />
+    </worksheet>
+    <worksheet name='Rate of eductation vs rate of life expectancy (region) '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='region_edu_life_expectancy_rates' name='federated.0c5c6s2104m0po1d4ytih0iidv0j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c5c6s2104m0po1d4ytih0iidv0j'>
+            <column-instance column='[education_change_rate]' derivation='Avg' name='[avg:education_change_rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Education Change Rate' datatype='real' name='[education_change_rate]' role='measure' type='quantitative' />
+            <column-instance column='[region_code]' derivation='None' name='[none:region_code:nk]' pivot='key' type='nominal' />
+            <column caption='Region Code' datatype='string' name='[region_code]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0c5c6s2104m0po1d4ytih0iidv0j].[none:region_code:nk]' direction='ASC' using='[federated.0c5c6s2104m0po1d4ytih0iidv0j].[avg:education_change_rate:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='true' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0c5c6s2104m0po1d4ytih0iidv0j].[none:region_code:nk]</rows>
+        <cols>[federated.0c5c6s2104m0po1d4ytih0iidv0j].[avg:education_change_rate:qk]</cols>
+      </table>
+      <simple-id uuid='{18164E77-307D-4707-9EA7-857BFCABBB8B}' />
+    </worksheet>
+    <worksheet name='Schooling vs Life Expactancy'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Life expectancy vs Total schooling by Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_merged_data' name='federated.0tgip1v0sginra1cf4d5f01ls2wh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tgip1v0sginra1cf4d5f01ls2wh'>
+            <column datatype='real' name='[Life expectancy (years)]' role='measure' type='quantitative' />
+            <column-instance column='[Life expectancy (years)]' derivation='Avg' name='[avg:Life expectancy (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tyr]' derivation='Avg' name='[avg:tyr:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_code]' derivation='None' name='[none:region_code:nk]' pivot='key' type='nominal' />
+            <column caption='Region Code' datatype='string' name='[region_code]' role='dimension' type='nominal' />
+            <column caption='Total schooling (years) 1' datatype='real' name='[tyr]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:region_code:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0tgip1v0sginra1cf4d5f01ls2wh].[avg:tyr:qk]</rows>
+        <cols>[federated.0tgip1v0sginra1cf4d5f01ls2wh].[avg:Life expectancy (years):qk]</cols>
+      </table>
+      <simple-id uuid='{C7C64822-7374-4FE6-83DC-760BF33F5FF4}' />
+    </worksheet>
+    <worksheet name='Schooling vs Life Expt by country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Schooling vs Life Expectancy by Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_suicide_rate_life_expectancy_no_null' name='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0'>
+            <column datatype='real' name='[Life expectancy (years)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total schooling (years)]' role='measure' type='quantitative' />
+            <column-instance column='[Life expectancy (years)]' derivation='Avg' name='[avg:Life expectancy (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total schooling (years)]' derivation='Avg' name='[avg:Total schooling (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Region:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='true' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Life expectancy (years):qk]</rows>
+        <cols>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Total schooling (years):qk]</cols>
+      </table>
+      <simple-id uuid='{1B4DB6C3-9388-468D-8748-004DBC6323B1}' />
+    </worksheet>
+    <worksheet name='Schooling vs Suicide Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Suicide rate vs Total schooling by Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_merged_data' name='federated.0tgip1v0sginra1cf4d5f01ls2wh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tgip1v0sginra1cf4d5f01ls2wh'>
+            <column caption='Suicide Rate' datatype='real' name='[SuicideRate]' role='measure' type='quantitative' />
+            <column-instance column='[SuicideRate]' derivation='Avg' name='[avg:SuicideRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tyr]' derivation='Avg' name='[avg:tyr:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_code]' derivation='None' name='[none:region_code:nk]' pivot='key' type='nominal' />
+            <column caption='Region Code' datatype='string' name='[region_code]' role='dimension' type='nominal' />
+            <column caption='Total schooling (years) 1' datatype='real' name='[tyr]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:region_code:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0tgip1v0sginra1cf4d5f01ls2wh].[avg:tyr:qk]</rows>
+        <cols>[federated.0tgip1v0sginra1cf4d5f01ls2wh].[avg:SuicideRate:qk]</cols>
+      </table>
+      <simple-id uuid='{84F179C2-6002-4D36-A5D3-5439E7EC88F4}' />
+    </worksheet>
+    <worksheet name='Sheet 13'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_suicide_rate_life_expectancy_no_null' name='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0'>
+            <column caption='PopulationBin' datatype='string' name='[Calculation_621215290738126849]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Population (thousands)])/(1000) &gt; 35 THEN &quot;Big&quot; ELSEIF ([Population (thousands)])/(1000) &lt; 5 THEN &quot;Small&quot; ELSE &quot;Medium&quot; END' />
+            </column>
+            <column datatype='integer' name='[Population (thousands)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total schooling (years) (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[Total schooling (years)]' peg='0' size='0.35' />
+            </column>
+            <column datatype='real' name='[Total schooling (years)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Total schooling (years)]' derivation='Count' name='[cnt:Total schooling (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_621215290738126849]' derivation='None' name='[none:Calculation_621215290738126849:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total schooling (years) (bin)]' derivation='None' name='[none:Total schooling (years) (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Sex:nk]'>
+            <groupfilter function='member' level='[none:Sex:nk]' member='&quot;MF&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[yr:Year:ok]'>
+            <groupfilter function='member' level='[yr:Year:ok]' member='2010' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[yr:Year:ok]</column>
+            <column>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Sex:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[cnt:Total schooling (years):qk]</rows>
+        <cols>([federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Calculation_621215290738126849:nk] * [federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Total schooling (years) (bin):qk])</cols>
+        <show-full-range>
+          <column>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[Total schooling (years) (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E425BB3A-A115-4234-9C41-41068639C419}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_suicide_rate_life_expectancy_no_null' name='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvq1no0lpz8yf1ehtbe11vtcjp0'>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total schooling (years)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Total schooling (years)]' derivation='Avg' name='[avg:Total schooling (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Sex:nk]'>
+            <groupfilter function='member' level='[none:Sex:nk]' member='&quot;MF&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Sex:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[avg:Total schooling (years):qk]</rows>
+        <cols>([federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Region:nk] * [federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[tyr:Year:qk])</cols>
+      </table>
+      <simple-id uuid='{1DB2C8F7-087C-469E-8B2A-B6F764589965}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_merged_data_tableau_clean' name='federated.0j0fsjs05swxvq18z3flt0x9r4v1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j0fsjs05swxvq18z3flt0x9r4v1'>
+            <column datatype='real' name='[Life expectancy (years)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total schooling (years)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Life expectancy (years)]' derivation='Avg' name='[avg:Life expectancy (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total schooling (years)]' derivation='Avg' name='[avg:Total schooling (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0j0fsjs05swxvq18z3flt0x9r4v1].[none:Year:qk]' included-values='in-range'>
+            <min>1990</min>
+            <max>2010</max>
+          </filter>
+          <slices>
+            <column>[federated.0j0fsjs05swxvq18z3flt0x9r4v1].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j0fsjs05swxvq18z3flt0x9r4v1].[none:Region:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='true' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0j0fsjs05swxvq18z3flt0x9r4v1].[avg:Life expectancy (years):qk]</rows>
+        <cols>[federated.0j0fsjs05swxvq18z3flt0x9r4v1].[avg:Total schooling (years):qk]</cols>
+      </table>
+      <simple-id uuid='{7CBBD352-D5A0-42DB-B3EA-8CB8A606CDDC}' />
+    </worksheet>
+    <worksheet name='Total schooling by region and country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='edu_merged_data' name='federated.0tgip1v0sginra1cf4d5f01ls2wh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tgip1v0sginra1cf4d5f01ls2wh'>
+            <column-instance column='[tyr]' derivation='Avg' name='[avg:tyr:qk]' pivot='key' type='quantitative' />
+            <column caption='Country 1' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Pri' datatype='real' name='[pri]' role='measure' type='quantitative' />
+            <column-instance column='[pri]' derivation='Sum' name='[sum:pri:qk]' pivot='key' type='quantitative' />
+            <column caption='Total schooling (years) 1' datatype='real' name='[tyr]' role='measure' type='quantitative' />
+            <column caption='Year 1' datatype='real' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:country:nk]'>
+            <groupfilter function='empty-level' member='[none:country:nk]' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[avg:tyr:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[sum:pri:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0tgip1v0sginra1cf4d5f01ls2wh].[avg:tyr:qk] + [federated.0tgip1v0sginra1cf4d5f01ls2wh].[sum:pri:qk])</rows>
+        <cols>[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{B7528426-BE11-4577-A0E1-E7C8674E3356}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='156'>
+    <window class='worksheet' name='Schooling vs Life Expactancy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:region_code:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{90496739-DBCC-4532-91B8-D563ED8308C3}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.0j0fsjs05swxvq18z3flt0x9r4v1].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{762E4928-A13A-4C7C-8554-9CCF2DD52638}' />
+    </window>
+    <window class='worksheet' name='Schooling vs Suicide Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:region_code:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BFBB7AAB-2925-4929-A5C7-DC9F10462C94}' />
+    </window>
+    <window class='worksheet' name='Total schooling by region and country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:country:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.0tgip1v0sginra1cf4d5f01ls2wh].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3BEC40B2-9CA1-4040-9945-BBFC3DBA67AC}' />
+    </window>
+    <window class='worksheet' name='Life Expect By Year - World'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E71629D2-3BCA-4228-B4D6-6DF6E73C6755}' />
+    </window>
+    <window class='worksheet' name='Life Expect By Year - Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{76926951-FBB1-415D-834F-665738004466}' />
+    </window>
+    <window class='worksheet' name='Life Expect By Year - Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8840A70C-4CA3-4092-91FC-008BA3E0D713}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Life Expect By Year - Country (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC05A12C-7BE9-4C3F-98ED-6377C059095B}' />
+    </window>
+    <window class='worksheet' name='Life Expect By Year - World (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A854A39B-B5D5-4DBD-8CDB-E906B32AD608}' />
+    </window>
+    <window class='worksheet' name='Rate of eductation vs rate of life expectancy (country)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16abv3d0verlep19ohfg20byhspk].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D7302AB7-3D29-44AD-AFC4-EFE16CB809D1}' />
+    </window>
+    <window class='worksheet' name='Rate of eductation vs rate of life expectancy (region) '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D44FA740-12CF-4F2C-B0E5-3C46B2D21F62}' />
+    </window>
+    <window class='worksheet' name='Schooling vs Life Expt by country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0zvq1no0lpz8yf1ehtbe11vtcjp0].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{90484476-83BF-4390-97CF-35E90C99F62C}' />
+    </window>
+    <window class='worksheet' name='Sheet 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{092482BC-1552-4C3C-ADC1-897DD8E505B8}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{26B9A5ED-4DD3-4793-B639-9C7EFE956133}' />
+    </window>
+  </windows>
+</workbook>

@@ -16,3 +16,5 @@ higher happinese level. By visualizing the data, we want to reassure the
 purpose of education, and investigate how the world population is learning
 from a historical standpoint, and how life expectancy, suicide rate &
 happiness level change overtime in relation to education
+
+Link to the final dashboard: http://bit.ly/hcde511eduplus
